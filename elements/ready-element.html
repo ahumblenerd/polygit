@@ -1,0 +1,16 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+
+<polymer-element name = "ready-element" >
+<template>
+<textarea id = "Area1">Hello this is a test for test area .</textarea>
+</template>
+<script>
+	Polymer({
+			boss:"Arun",
+			ready: function(){
+				this.$.Area1.textContent = "This is the text that will actually come up. - "+ this.boss;
+			}
+	});
+</script>
+</polymer-element>
